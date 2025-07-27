@@ -1,46 +1,49 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*$py.class
+
+# C extensions
 *.so
-*.dll
-*.pyd
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
 
 # Virtual environments
 venv/
 env/
+ENV/
+.env/
 .venv/
-customer_categorizer/
-Lib/
-Include/
-Scripts/
 
 # Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+.ipynb_checkpoints
 
-# VSCode or IDE settings
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# IDEs and editors
 .vscode/
 .idea/
-
-# Data files
-*.csv
-*.xlsx
-*.tsv
-*.json
-
-# Model files
-*.pkl
-*.joblib
-*.h5
-
-# Logs and cache
-*.log
-*.cache/
-*.pytest_cache/
+*.sublime-workspace
+*.sublime-project
 
 # OS files
 .DS_Store
 Thumbs.db
 
-# Environment and config
+# Environment variables and secrets
 .env
-*.env
+
+# Logs
+*.log
