@@ -1,4 +1,4 @@
-##Customer Categorization Web App ##
+## Customer Categorization ##
 
 This project is a complete end-to-end machine learning application for categorizing customers based on their behavior and demographics. Built from scratch using Python, Flask, and scikit-learn, the app enables users to input customer data and receive a predicted category or cluster in return.
 
