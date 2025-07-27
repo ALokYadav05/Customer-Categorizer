@@ -15,6 +15,18 @@ This project is a complete end-to-end machine learning application for categoriz
 
 ❗Note: Currently, the model is predicting the same cluster for all inputs. Needs improvement in clustering logic and training pipeline.
 
+## Project Structure:
+customer_categorizer_project/
+├── Deployment/
+│   ├── app.py
+│   └── templates/
+│       ├── index.html
+│       └── result.html
+├── src/
+├── DataPreprocess_&_EDA.ipynb
+├── Feature_Engineering.ipynb
+├── Classification.ipynb
+
 
 # Current Limitations: #
 * The current model always predicts the same cluster (usually Cluster 0), indicating potential overfitting or poor clustering quality.
