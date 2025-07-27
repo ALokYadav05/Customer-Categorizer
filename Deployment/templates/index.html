@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Category Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Customer Categorizer Form</h2>
+        <form action="/predict" method="POST">
+            <label>Age: <input type="number" name="Age" required></label><br>
+            <label>Education (0=Basic, 1=High School, 2=Graduate, 3=Postgraduate, 4=PhD): <input type="number" name="Education" required></label><br>
+            <label>Parental Status (0=No, 1=Yes): <input type="number" name="Parental_Status" required></label><br>
+            <label>Children: <input type="number" name="Children" required></label><br>
+            <label>Income: <input type="number" step="0.01" name="Income" required></label><br>
+            <label>Total Spending: <input type="number" step="0.01" name="Total_Spending" required></label><br>
+            <label>Days as Customer: <input type="number" name="Days_as_Customer" required></label><br>
+            <label>Recency (days since last purchase): <input type="number" name="Recency" required></label><br>
+            <label>Wines Purchased: <input type="number" name="Wines" required></label><br>
+            <label>Fruits Purchased: <input type="number" name="Fruits" required></label><br>
+            <label>Meat Purchased: <input type="number" name="Meat" required></label><br>
+            <label>Fish Purchased: <input type="number" name="Fish" required></label><br>
+            <label>Sweets Purchased: <input type="number" name="Sweets" required></label><br>
+            <label>Gold Spending: <input type="number" step="0.01" name="Gold" required></label><br>
+            <label>Web Purchases: <input type="number" name="Web" required></label><br>
+            <label>Catalog Purchases: <input type="number" name="Catalog" required></label><br>
+            <label>Store Purchases: <input type="number" name="Store" required></label><br>
+            <label>Web Visits per Month: <input type="number" name="Web_Visits_Month" required></label><br>
+            <label>Accepted Campaigns: <input type="number" name="AcceptedCmp" required></label><br>
+            <label>Complain (0=No, 1=Yes): <input type="number" name="Complain" required></label><br>
+            <label>Response (0=No, 1=Yes): <input type="number" name="Response" required></label><br>
+
+            <!-- Dropdown for Marital Status -->
+            <label>Marital Status:
+                <select name="Marital_Status" required>
+                    <!-- <option value="Married">Married</option> -->
+                    <option value="Together">Together</option>
+                    <option value="Single">Single</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widow">Widow</option>
+                    <option value="Others">Others</option>
+                </select>
+            </label><br><br>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
