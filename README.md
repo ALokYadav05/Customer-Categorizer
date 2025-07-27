@@ -16,6 +16,7 @@ This project is a complete end-to-end machine learning application for categoriz
 ❗Note: Currently, the model is predicting the same cluster for all inputs. Needs improvement in clustering logic and training pipeline.
 
 ## Project Structure:
+```text
 customer_categorizer_project/
 ├── Deployment/
 │   ├── app.py
