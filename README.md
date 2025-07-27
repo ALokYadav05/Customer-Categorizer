@@ -24,10 +24,12 @@ customer_categorizer_project/
 │       ├── index.html
 │       └── result.html
 ├── src/
-├── DataPreprocess_&_EDA.ipynb
-├── Feature_Engineering.ipynb
-├── Classification.ipynb
-
+│   ├── DataPreprocess_&_EDA.ipynb
+│   ├── Feature_Engineering.ipynb
+│   └── Classification.ipynb
+├── .gitignore
+└── README.md
+```
 
 # Current Limitations: #
 * The current model always predicts the same cluster (usually Cluster 0), indicating potential overfitting or poor clustering quality.
